@@ -69,7 +69,7 @@ module Minion
 			end
 		end
 		@@handlers ||= []
-		at_exit { Minion.run } if @@handlers.size == 0
+		#at_exit { Minion.run } if @@handlers.size == 0
 		@@handlers << handler
 	end
 
